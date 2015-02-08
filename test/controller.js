@@ -3,12 +3,31 @@ describe('controllers', function() {
   var $rootScope;
   var $scope;
   var controller;
+  var $q;
+  var $provide;
 
-  beforeEach(angular.mock.module('myApp'));
+  var products = [
+      {id:'car1', name:'car 1', images:['img1.jpg', 'img2.jpg', 'img3.jpg']},
+      {id:'car2', name:'car 2', images:['img1.jpg', 'img2.jpg']},
+  ];
 
-  beforeEach(angular.mock.inject(function(_$controller_, _$rootScope_){
+  var fakeProductService =  {
+    getProducts: function() {
+      return $q(function(resolve,reject){
+        resolve(products);
+      });
+    }
+  };
+
+  beforeEach(angular.mock.module('myApp', function(_$provide_){
+    $provide = _$provide_;
+  }));
+
+  beforeEach(angular.mock.inject(function(_$controller_, _$rootScope_, _$q_){
     $controller = _$controller_;
     $rootScope = _$rootScope_;
+    $q = _$q_;
+    $provide.value('ProductService', fakeProductService);
   }));
 
   beforeEach(function() {
