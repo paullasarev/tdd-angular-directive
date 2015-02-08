@@ -22,4 +22,17 @@ describe('directives', function() {
     expect(element.find('img').first().attr('src')).toBe('images/img1.jpg');
     expect(element.find('img').first().next().attr('src')).toBe('images/img2.jpg');
   })
+
+  it('should watch directive data changes', function() {
+    $scope.images = ["img1.jpg", "img2.jpg"];
+
+    var element = $compile('<div ng-slider="images"></div>')($scope);
+
+    expect(element.find('img').length).toBe(2);
+
+    $scope.images = ["img3.jpg"];
+    $scope.$apply();
+
+    expect(element.find('img').length).toBe(1);
+  })
 });

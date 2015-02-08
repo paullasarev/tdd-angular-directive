@@ -1,16 +1,18 @@
 describe('controllers', function() {
   var $controller;
+  var $rootScope;
   var $scope;
   var controller;
 
   beforeEach(angular.mock.module('myApp'));
 
-  beforeEach(angular.mock.inject(function(_$controller_){
+  beforeEach(angular.mock.inject(function(_$controller_, _$rootScope_){
     $controller = _$controller_;
+    $rootScope = _$rootScope_;
   }));
 
   beforeEach(function() {
-    $scope = {};
+    $scope = $rootScope.$new();
     controller = $controller('mainController', { $scope: $scope });
   });
 
@@ -34,18 +36,11 @@ describe('controllers', function() {
     expect($scope.images.length).toEqual(2);
   });
 
-  // it('should change images when change product', function() {
+  it('should change images when change product', function() {
+    $scope.product = $scope.products[2];
+    $scope.$apply();
 
-  //   var $scope = {};
-  //   var controller = $controller('mainController', { $scope: $scope });
-
-  //   $scope.product = $scope.products[1];
-
-  //   // $scope.$digest();
-
-  //   expect($scope.images.length).toEqual(2);
-  // });
-
-
+    expect($scope.images.length).toEqual(1);
+  });
   
 });

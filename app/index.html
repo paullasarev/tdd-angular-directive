@@ -9,9 +9,10 @@
   <p>hello</p>
 
   <div class='product-selector'>
-    <select ng-model="product" ng-options="product.name for product in products"></select>
+    <select ng-model="product" ng-options="product.name for product in products" 
+      ></select>
   </div>
-
+<!-- ng-change="setProduct(product.id)" -->
   <div ng-slider="images"> </div>
   
   <script src="bower_components/jquery/dist/jquery.js"></script>
