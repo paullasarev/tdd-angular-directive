@@ -15,3 +15,5 @@ npm install -g bower
 bower init
 
 npm install --save-dev connect serve-static morgan
+
+npm start
