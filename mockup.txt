@@ -1,0 +1,16 @@
+
+slider:
+
+      +-------+
+      |       |
+      |       |
+      +-------+
+
+<- [  ] [  ] [  ] ->
+
+
+<div ng-slider>
+  <img src="http:/images/img1.jpg"/>
+  <img src="http:/images/img2.jpg"/>
+  <img src="http:/images/img3.jpg"/>
+</div>

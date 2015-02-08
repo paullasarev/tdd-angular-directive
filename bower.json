@@ -1,0 +1,27 @@
+{
+  "name": "tdd-angular-directive",
+  "version": "0.0.1",
+  "homepage": "https://github.com/paullasarev/tdd-angular-directive",
+  "authors": [
+    "paullasarev <paullasarev@gmail.com>"
+  ],
+  "description": "sample tdd process for angular directive",
+  "main": "app/index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular",
+    "tdd",
+    "directive",
+    "example"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

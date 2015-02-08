@@ -1,0 +1,17 @@
+npm init
+
+npm install -g karma-cli
+
+npm install --save-dev karma
+npm install --save-dev karma-chrome-launcher
+npm install --save-dev karma-jasmine
+karma init
+
+mkdir app
+mkdir test
+
+
+npm install -g bower
+bower init
+
+npm install --save-dev connect serve-static morgan

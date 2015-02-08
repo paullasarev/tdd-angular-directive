@@ -1,0 +1,34 @@
+{
+  "name": "tdd-angular-directive",
+  "version": "0.0.1",
+  "description": "sample tdd process for angular directive",
+  "main": "server.js",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paullasarev/tdd-angular-directive.git"
+  },
+  "keywords": [
+    "karma",
+    "angular",
+    "tdd",
+    "directive"
+  ],
+  "author": "paullasarev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paullasarev/tdd-angular-directive/issues"
+  },
+  "homepage": "https://github.com/paullasarev/tdd-angular-directive",
+  "devDependencies": {
+    "karma": "^0.12.31",
+    "jasmine-core": "^2.2.0",
+    "karma-jasmine": "^0.3.5",
+    "karma-chrome-launcher": "^0.1.7",
+    "morgan": "^1.5.1",
+    "connect": "^3.3.4",
+    "serve-static": "^1.8.1"
+  }
+}
