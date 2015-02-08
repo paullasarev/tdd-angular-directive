@@ -1,4 +1,4 @@
-describe('angular module', function() {
+describe('directives', function() {
   var $compile, $rootScope, $scope;
 
   beforeEach(function() {

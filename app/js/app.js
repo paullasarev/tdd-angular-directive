@@ -19,10 +19,5 @@ app.directive('ngSlider', function () {
         }
     };
 
-    return {
-        restrict: 'A',
-        replace: true,
-        template: '<div ng-repeat="src in images"><img src="src"></img></div>'
-    };
 });
 
