@@ -49,3 +49,12 @@ app.directive('ngSlider', function () {
 
 });
 
+app.factory('ProductService', ['$http', function ($http) {
+  return {
+    getProducts: function() {
+      return $http.get('/api/products');
+    }
+  }
+
+}]);
+
