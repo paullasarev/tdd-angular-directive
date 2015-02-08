@@ -7,6 +7,11 @@
 </head>
 <body ng-controller="mainController">
   <p>hello</p>
+
+  <div class='product-selector'>
+    <select ng-model="product" ng-options="product.name for product in products"></select>
+  </div>
+
   <div ng-slider="images"> </div>
   
   <script src="bower_components/jquery/dist/jquery.js"></script>
