@@ -9,7 +9,7 @@ slider:
 <- [  ] [  ] [  ] ->
 
 
-<div ng-slider>
+<div ng-slide="images"r>
   <img src="http:/images/img1.jpg"/>
   <img src="http:/images/img2.jpg"/>
   <img src="http:/images/img3.jpg"/>

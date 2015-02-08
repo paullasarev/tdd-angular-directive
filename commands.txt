@@ -17,3 +17,7 @@ bower init
 npm install --save-dev connect serve-static morgan
 
 npm start
+
+karma start
+
+bower install --save jquery angular angular-route angular-mocks
